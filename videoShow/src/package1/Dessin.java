@@ -1,11 +1,11 @@
 package package1;
 
 import java.awt.Graphics;
+
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import javax.swing.JPanel;
-
 
 public class Dessin extends JPanel{
 	/**
@@ -37,7 +37,7 @@ public class Dessin extends JPanel{
      * @param ch le train  à ajouter au Dessin
      * @see train
      */
-    public void ajouterObjet(TrainCercle t) {
+    public void ajouterObjet(IObjetDessinable t) {
 
         if (!objetDessin.contains(t)) {
             // l'objet n'est pas déjà dans la liste
@@ -82,9 +82,12 @@ public class Dessin extends JPanel{
     public void animer() {
         //  dessiner les Objets que contient le dessin
         for (IObjetDessinable c : objetDessin) {
-        	c.deplacer();
+        	/*On ajouter ce code pour v�rifier le type de c*/
+        	if (c instanceof IObjetAnimable) {
+        	 ((IObjetAnimable)c).deplacer();
             
         }
     }
 
+    }
 }
