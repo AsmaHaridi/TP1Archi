@@ -22,6 +22,7 @@ public class LancerApp1  {
 		// création de la zône de dessin dans la fenêtre
 		Dessin d = new Dessin();
 		Dessin d1 = new Dessin();
+		
 		laFenetre.getContentPane().add(d);
 		
 		// affiche la fenêtre
