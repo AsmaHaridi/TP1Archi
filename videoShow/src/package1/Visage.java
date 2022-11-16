@@ -128,6 +128,7 @@ public class Visage implements IObjetAnimable{
         this.yhg = yg;
         this.largeur = Math.max(larg, LARGEUR_MIN);
         this.hauteur = Math.max(haut, HAUTEUR_MIN);
+        
     }
 
     /**
@@ -302,5 +303,8 @@ public class Visage implements IObjetAnimable{
         g.drawOval(xhg + 3 * largeurOeil, yhg + hauteurOeil, largeurOeil,
                 hauteurOeil);
 
+    }
+    public void deplacer() {
+        
     }
 }
