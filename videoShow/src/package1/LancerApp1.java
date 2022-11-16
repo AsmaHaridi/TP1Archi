@@ -42,6 +42,11 @@ public class LancerApp1  {
 		Forme f2=new PolygoneRegulier(5,240,40,40,4.0f,Color.DARK_GRAY ,null);
 		d.ajouterObjet(f1); d.ajouterObjet(f2);
 		
+		Forme f3=new Etoile(350,100,50,8.f,Color.GREEN ,Color.GREEN);
+		d.ajouterObjet(f3);
+		Forme f4=new PolygoneRegulier(5,240,40,40,4.0f,Color.BLACK ,Color.BLACK);
+		d.ajouterObjet(f4);
+		
 		while(true) {
 		// la zone de dessin se réaffiche
 		d.repaint();

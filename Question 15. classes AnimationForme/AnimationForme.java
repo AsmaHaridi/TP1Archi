@@ -18,7 +18,8 @@ public class AnimationForme implements IObjetAnimable {
         this.forme = forme;
         this.formeAnimable = formeAnimable;
     }
-
+    
+  
     @Override
     public void deplacer() {
         this.formeAnimable.deplacer(this.forme);
