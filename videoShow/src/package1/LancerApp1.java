@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
-public class LancerApp1 {
+public class LancerApp1  {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -37,6 +37,10 @@ public class LancerApp1 {
 		}
 		Visage v= new Visage(d);
 		d.ajouterObjet(v);
+		
+		Forme f1=new Etoile(350,100,50,8.f,Color.RED ,Color.YELLOW);
+		Forme f2=new PolygoneRegulier(5,240,40,40,4.0f,Color.DARK_GRAY ,null);
+		d.ajouterObjet(f1); d.ajouterObjet(f2);
 		
 		while(true) {
 		// la zone de dessin se réaffiche
