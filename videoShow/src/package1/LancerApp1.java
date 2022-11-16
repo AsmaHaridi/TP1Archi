@@ -21,6 +21,7 @@ public class LancerApp1  {
 		
 		// création de la zône de dessin dans la fenêtre
 		Dessin d = new Dessin();
+		Dessin d1 = new Dessin();
 		laFenetre.getContentPane().add(d);
 		
 		// affiche la fenêtre
@@ -35,8 +36,8 @@ public class LancerApp1  {
 		(float) Math.random()), d, 10, 10);
 		d.ajouterObjet(lesTrains[i]);
 		}
-		Visage v= new Visage(d);
-		d.ajouterObjet(v);
+		Visage v= new Visage(d1);
+		d1.ajouterObjet(v);
 		
 		Forme f1=new Etoile(350,100,50,8.f,Color.RED ,Color.YELLOW);
 		Forme f2=new PolygoneRegulier(5,240,40,40,4.0f,Color.DARK_GRAY ,null);
@@ -56,6 +57,12 @@ public class LancerApp1  {
 		d.animer();
 		
 		}
+		
+		while(true) {
+			d1.repaint();
+			d1.pause(50);
+			d1.MVTCirculaire();
+			}
 
 	}
 
